@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE09195B27C4887E0053256F /* LoanEntryForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE09195A27C4887E0053256F /* LoanEntryForm.swift */; };
+		EE09196027C494110053256F /* FormEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE09195F27C494110053256F /* FormEntry.swift */; };
 		EE0B5E0327C43E0D00808B08 /* MortgageCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0B5E0227C43E0D00808B08 /* MortgageCalculatorApp.swift */; };
-		EE0B5E0527C43E0D00808B08 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0B5E0427C43E0D00808B08 /* ContentView.swift */; };
+		EE0B5E0527C43E0D00808B08 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0B5E0427C43E0D00808B08 /* MainView.swift */; };
 		EE0B5E0727C43E0F00808B08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0B5E0627C43E0F00808B08 /* Assets.xcassets */; };
 		EE0B5E0A27C43E0F00808B08 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0B5E0927C43E0F00808B08 /* Preview Assets.xcassets */; };
 		EE0B5E1427C43E0F00808B08 /* MortgageCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0B5E1327C43E0F00808B08 /* MortgageCalculatorTests.swift */; };
 		EE0B5E1E27C43E0F00808B08 /* MortgageCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0B5E1D27C43E0F00808B08 /* MortgageCalculatorUITests.swift */; };
 		EE0B5E2027C43E1000808B08 /* MortgageCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0B5E1F27C43E1000808B08 /* MortgageCalculatorUITestsLaunchTests.swift */; };
+		EE0B5E2D27C43FFB00808B08 /* ExcelFormulas.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0B5E2C27C43FFB00808B08 /* ExcelFormulas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE09195A27C4887E0053256F /* LoanEntryForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanEntryForm.swift; sourceTree = "<group>"; };
+		EE09195F27C494110053256F /* FormEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormEntry.swift; sourceTree = "<group>"; };
 		EE0B5DFF27C43E0D00808B08 /* MortgageCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MortgageCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0B5E0227C43E0D00808B08 /* MortgageCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageCalculatorApp.swift; sourceTree = "<group>"; };
-		EE0B5E0427C43E0D00808B08 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE0B5E0427C43E0D00808B08 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		EE0B5E0627C43E0F00808B08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE0B5E0927C43E0F00808B08 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE0B5E0F27C43E0F00808B08 /* MortgageCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MortgageCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +49,7 @@
 		EE0B5E1927C43E0F00808B08 /* MortgageCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MortgageCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0B5E1D27C43E0F00808B08 /* MortgageCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageCalculatorUITests.swift; sourceTree = "<group>"; };
 		EE0B5E1F27C43E1000808B08 /* MortgageCalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageCalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE0B5E2C27C43FFB00808B08 /* ExcelFormulas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExcelFormulas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE09195927C488590053256F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE09195F27C494110053256F /* FormEntry.swift */,
+				EE0B5E0427C43E0D00808B08 /* MainView.swift */,
+				EE09195A27C4887E0053256F /* LoanEntryForm.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		EE0B5DF627C43E0C00808B08 = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +111,9 @@
 			isa = PBXGroup;
 			children = (
 				EE0B5E0227C43E0D00808B08 /* MortgageCalculatorApp.swift */,
-				EE0B5E0427C43E0D00808B08 /* ContentView.swift */,
+				EE09195927C488590053256F /* Views */,
 				EE0B5E0627C43E0F00808B08 /* Assets.xcassets */,
+				EE0B5E2C27C43FFB00808B08 /* ExcelFormulas.swift */,
 				EE0B5E0827C43E0F00808B08 /* Preview Content */,
 			);
 			path = MortgageCalculator;
@@ -257,8 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE0B5E0527C43E0D00808B08 /* ContentView.swift in Sources */,
+				EE0B5E2D27C43FFB00808B08 /* ExcelFormulas.swift in Sources */,
+				EE0B5E0527C43E0D00808B08 /* MainView.swift in Sources */,
+				EE09195B27C4887E0053256F /* LoanEntryForm.swift in Sources */,
 				EE0B5E0327C43E0D00808B08 /* MortgageCalculatorApp.swift in Sources */,
+				EE09196027C494110053256F /* FormEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,7 +452,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.isaacpit.MortgageCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = app.isaacpit.MortgageCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -461,7 +481,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.isaacpit.MortgageCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = app.isaacpit.MortgageCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
