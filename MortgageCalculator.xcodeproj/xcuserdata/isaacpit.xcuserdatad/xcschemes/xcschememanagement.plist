@@ -9,6 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>MortgageCalculatorTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>EE0B5DFE27C43E0D00808B08</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE0B5E0E27C43E0F00808B08</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE0B5E1827C43E0F00808B08</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

@@ -103,13 +103,15 @@ struct LoanEntryForm : View {
                             txtLabel: "Periods",
                             txtPlaceholder: "Years",
                             boundVal: $months,
-                            keyboardType: .numberPad)
+                            keyboardType: .numberPad,
+                            txtLabelSuffix: "Yrs")
 
                         
                         FormEntry(
                             txtLabel: "Pymts Per Prd",
                             txtPlaceholder: "Months Per Year",
-                            boundVal: $paymentsPerPeriod, keyboardType: .numberPad)
+                            boundVal: $paymentsPerPeriod, keyboardType: .numberPad,
+                            txtLabelSuffix: "Mos")
 
                     }
                 }
@@ -122,13 +124,17 @@ struct LoanEntryForm : View {
                             txtLabel: "Rate",
                             txtPlaceholder: "Interest Rate",
                             boundVal: $rate,
-                            keyboardType: .decimalPad)
+                            keyboardType: .decimalPad,
+                            txtLabelSuffix: "%"
+                        )
 
                         FormEntry(
                             txtLabel: "Loan Amount",
                             txtPlaceholder: "Principal",
                             boundVal: $loanAmount,
-                            keyboardType: .decimalPad)
+                            keyboardType: .decimalPad,
+                            txtLabelSuffix: "$"
+                        )
 
                     }
                     

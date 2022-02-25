@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EE09195B27C4887E0053256F /* LoanEntryForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE09195A27C4887E0053256F /* LoanEntryForm.swift */; };
 		EE09196027C494110053256F /* FormEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE09195F27C494110053256F /* FormEntry.swift */; };
+		EE09196227C81E980053256F /* AmortizationCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE09196127C81E980053256F /* AmortizationCalculator.swift */; };
 		EE0B5E0327C43E0D00808B08 /* MortgageCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0B5E0227C43E0D00808B08 /* MortgageCalculatorApp.swift */; };
 		EE0B5E0527C43E0D00808B08 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0B5E0427C43E0D00808B08 /* MainView.swift */; };
 		EE0B5E0727C43E0F00808B08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0B5E0627C43E0F00808B08 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		EE09195A27C4887E0053256F /* LoanEntryForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanEntryForm.swift; sourceTree = "<group>"; };
 		EE09195F27C494110053256F /* FormEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormEntry.swift; sourceTree = "<group>"; };
+		EE09196127C81E980053256F /* AmortizationCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmortizationCalculator.swift; sourceTree = "<group>"; };
 		EE0B5DFF27C43E0D00808B08 /* MortgageCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MortgageCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE0B5E0227C43E0D00808B08 /* MortgageCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageCalculatorApp.swift; sourceTree = "<group>"; };
 		EE0B5E0427C43E0D00808B08 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				EE09195927C488590053256F /* Views */,
 				EE0B5E0627C43E0F00808B08 /* Assets.xcassets */,
 				EE0B5E2C27C43FFB00808B08 /* ExcelFormulas.swift */,
+				EE09196127C81E980053256F /* AmortizationCalculator.swift */,
 				EE0B5E0827C43E0F00808B08 /* Preview Content */,
 			);
 			path = MortgageCalculator;
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE09196227C81E980053256F /* AmortizationCalculator.swift in Sources */,
 				EE0B5E2D27C43FFB00808B08 /* ExcelFormulas.swift in Sources */,
 				EE0B5E0527C43E0D00808B08 /* MainView.swift in Sources */,
 				EE09195B27C4887E0053256F /* LoanEntryForm.swift in Sources */,

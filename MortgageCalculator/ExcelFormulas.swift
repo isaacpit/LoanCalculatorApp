@@ -28,15 +28,21 @@ class ExcelFormulas {
         return (rate == 0) ? nper : self.pow1pm1(x: rate, y: nper) / rate
     }
 
-    class func myPmt(rate: Double, nper: Double, pv: Double) -> Double {
-        return rate / (1 - pow((1 + rate), -nper)) * -pv
+    class func myPmt(rate: Double, nper: Int, pv: Double) -> Double {
+        return rate / (1 - pow((1 + rate), -Double(nper))) * -pv
     }
     
-    class func myFv(rate: Double, nper: Double, pv: Double, c: Double) -> Double {
-        return -(c * (pow(1 + rate, nper) - 1) / rate +  pv * pow(1 + rate, nper))
+    class func myFv(rate: Double, nper: Int, pv: Double, c: Double) -> Double {
+        
+        let partOne = c * (pow(1 + rate, Double(nper)) - 1)
+        return -partOne / rate +  pv * pow(1 + rate, Double(nper))
     }
     
-    class func myipmt(rate: Double, per: Double, nPer: Double, pv: Double, fv: Double) -> Double{
-        return myFv(rate:rate, nper: per - 1, pv: pv, c: myPmt(rate: rate, nper: nPer, pv: pv)) * rate
+    class func myipmt(rate: Double, per: Int, nPer: Int, pv: Double, fv: Double) -> Double{
+        return myFv(rate:rate, nper: per - 1, pv: pv, c: -pmt(rate: rate, nper: Double(nPer), pv: pv)) * rate
+    }
+    
+    class func myppmt(rate: Double, per: Double, nPer: Int, pv: Double, fv: Double) -> Double {
+        return myPmt(rate: rate, nper: nPer, pv: pv) + myipmt(rate: rate, per: Int(per), nPer: nPer, pv: pv, fv: fv)
     }
 }

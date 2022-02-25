@@ -28,8 +28,7 @@ struct MainView: View {
                     Image(systemName: "doc.fill")
                     Text("Properties")
                 }
-                
-            }
+            }.statusBar(hidden: false)
     }
     
 }
